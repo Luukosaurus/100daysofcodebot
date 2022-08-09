@@ -19,6 +19,7 @@ module.exports = {
                 fs.writeFile(`./opslag/gebruikerlinks.json`, newlinkinfo,function (err) {
                     if (err) {console.log(err)};
                 });
+                message.reply("Je portfolio is toegevoegd")
             }else if(tagged){
                 tagged =  message.guild.members.cache.get(tagged.id)
                 message.channel.send("De link van het portfolio van " + tagged.user.username + " is " + linkinfo[tagged.id])
