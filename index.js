@@ -6,6 +6,7 @@ const client = new Discord.Client({intents: [
     Discord.GatewayIntentBits.GuildBans,
     Discord.GatewayIntentBits.GuildMessages,
     Discord.GatewayIntentBits.MessageContent,
+    Discord.GatewayIntentBits.GuildMessageReactions,
   ]});
 client.commands = new Discord.Collection();
 client.events - new Discord.Collection();

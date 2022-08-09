@@ -7,9 +7,6 @@ module.exports = async (client,Discord) => {
         var today = new Date()
         var start = new Date("08/7/2022");
         var dezedag = Math.floor((today[Symbol.toPrimitive]('number') - start[Symbol.toPrimitive]('number'))/86400000)
-        console.log(today[Symbol.toPrimitive]('number'))
-        console.log(start[Symbol.toPrimitive]('number'))
-        console.log(start[Symbol.toPrimitive]('string'))
         const channel = guild.channels.cache.get("1006327689881337907")
         const Reminder = new Discord.EmbedBuilder()
         .setColor("#46FF00")
