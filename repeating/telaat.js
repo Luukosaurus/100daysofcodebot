@@ -3,7 +3,7 @@ const cron = require('cron');
 module.exports = async (client,Discord) => {
     uitschelder = new cron.CronJob('00 59 23 * * *', async () => {
         fs.readFile(`./opslag/lesnrs.json`, "utf8", (err, jsonString) => {
-            const general = client.channels.cache.get("1006291230478573668")
+            const general = client.channels.cache.get("1006290402682351650")
             var today = new Date()
             var start = new Date("08/7/2022");
             var dezedag = Math.floor((today[Symbol.toPrimitive]('number') - start[Symbol.toPrimitive]('number'))/86400000)

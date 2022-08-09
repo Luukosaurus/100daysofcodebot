@@ -13,7 +13,7 @@ module.exports = async (client,Discord) => {
                 {
                     var today = new Date()
                     var start = new Date("08/7/2022");
-                    var dezedag = Math.floor((today[Symbol.toPrimitive]('number') - start[Symbol.toPrimitive]('number'))/86400000)
+                    var dezedag = Math.floor((today[Symbol.toPrimitive]('number')-25200000 - start[Symbol.toPrimitive]('number'))/86400000)
             
                     fs.readFile(`./opslag/lesnrs.json`, "utf8", (err, jsonString) => {
                         if (err) {
