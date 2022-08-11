@@ -24,6 +24,7 @@ module.exports = async (client,Discord) => {
                         fs.writeFile(`./opslag/lesnrs.json`, newlesnrsinfo,function (err) {
                             if (err) {console.log(err)};
                         });
+                        user.send(`Goed gedaan je hebt les ${dezedag} af`)
                     })
                 }
             }

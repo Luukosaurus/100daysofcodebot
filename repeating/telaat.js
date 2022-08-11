@@ -15,7 +15,6 @@ module.exports = async (client,Discord) => {
             for(var i = 0; i < Object.keys(lesnrs).length; i++){
                 userid = Object.keys(lesnrs)[i]
                 userlvl = Object.values(lesnrs)[i]
-                console.log(userid + ":"+ userlvl +":"+ dezedag)
                 if(dezedag > userlvl){
                     randommessage(userid,userlvl,dezedag,general)
                 }
